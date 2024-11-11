@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const apiKey = 'YOUR_ACTUAL_API_KEY'; // Keep this secure
+const apiKey = 'Ro6tKGXY5Fx6McGqW9KKOpXUbvgJugvY'; // Keep this secure
 let sessionId = ''; // Will be generated
 
 // Endpoint to create a session and get sessionId
