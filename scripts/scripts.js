@@ -1,4 +1,8 @@
-// Fetch skills data and display profiles
+// Initialize API key and session ID (Do not expose API key in client-side code)
+const apiKey = 'Ro6tKGXY5Fx6McGqW9KKOpXUbvgJugvY';  // Securely store this in server-side code
+let sessionId = '';  // Will be obtained from server-side
+
+// Fetch skills data and display profiles (Modify to fetch dynamically if needed)
 fetch('data/skills.json')
   .then(response => response.json())
   .then(skillsData => {
@@ -64,7 +68,7 @@ function updateUserSkills(skill) {
   }
 }
 
-// Function to suggest new courses
+// Function to suggest new courses using plugin-1731243763
 function suggestNewCourses() {
   const userSkills = JSON.parse(localStorage.getItem('userSkills')) || [];
 
@@ -72,27 +76,41 @@ function suggestNewCourses() {
     return;
   }
 
-  // Fetch courses related to user's skills
-  fetch('data/courses.json')
+  // Prepare the request payload
+  const payload = {
+    "endpointId": "predefined-openai-gpt4o",
+    "query": `Suggest courses for the following skills: ${userSkills.join(', ')}.`,
+    "pluginIds": ["plugin-1731243763"],
+    "responseMode": "sync"
+  };
+
+  fetch(`https://api.on-demand.io/chat/v1/sessions/${sessionId}/query`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'apikey': apiKey
+    },
+    body: JSON.stringify(payload)
+  })
     .then(response => response.json())
-    .then(coursesData => {
+    .then(suggestions => {
+      // Handle the suggestions response
+      const courses = suggestions.data.courses; // Adjust based on actual response structure
       const suggestionsContainer = document.getElementById('suggested-courses');
       suggestionsContainer.innerHTML = '';
 
-      userSkills.forEach(skill => {
-        const courses = coursesData[skill];
-        if (courses && courses.length > 0) {
-          courses.forEach(course => {
-            const courseItem = document.createElement('li');
-            const courseLink = document.createElement('a');
-            courseLink.href = course.link;
-            courseLink.textContent = `${course.name} (Skill: ${course.skill})`;
-            courseLink.target = '_blank';
+      courses.forEach(course => {
+        const courseItem = document.createElement('li');
+        const courseLink = document.createElement('a');
+        courseLink.href = course.link;
+        courseLink.textContent = `${course.name} (Skill: ${course.skill})`;
+        courseLink.target = '_blank';
 
-            courseItem.appendChild(courseLink);
-            suggestionsContainer.appendChild(courseItem);
-          });
-        }
+        courseItem.appendChild(courseLink);
+        suggestionsContainer.appendChild(courseItem);
       });
+    })
+    .catch(error => {
+      console.error('Error fetching course suggestions:', error);
     });
 }
