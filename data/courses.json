@@ -1,22 +1,112 @@
 {
   "Programming": [
     {
-      "name": "Learn Programming in Python",
-      "link": "https://www.udemy.com/course/learn-programming-in-python/",
+      "name": "Introduction to Programming",
+      "link": "https://www.example.com/intro-to-programming",
       "skill": "Programming"
     },
     {
-      "name": "C++ Programming Fundamentals",
-      "link": "https://www.udemy.com/course/c-plus-plus-programming-fundamentals/",
+      "name": "Advanced Programming Techniques",
+      "link": "https://www.example.com/advanced-programming",
       "skill": "Programming"
     }
   ],
   "Algorithms": [
     {
-      "name": "Algorithms and Data Structures",
-      "link": "https://www.udemy.com/course/algorithms-and-data-structures/",
+      "name": "Algorithms 101",
+      "link": "https://www.example.com/algorithms-101",
       "skill": "Algorithms"
     }
   ],
-  // Additional skills and courses...
+  "Data Structures": [
+    {
+      "name": "Data Structures in Practice",
+      "link": "https://www.example.com/data-structures",
+      "skill": "Data Structures"
+    }
+  ],
+  "Statistics": [
+    {
+      "name": "Statistics for Data Science",
+      "link": "https://www.example.com/statistics-data-science",
+      "skill": "Statistics"
+    }
+  ],
+  "Machine Learning": [
+    {
+      "name": "Machine Learning Basics",
+      "link": "https://www.example.com/machine-learning-basics",
+      "skill": "Machine Learning"
+    }
+  ],
+  "Data Analysis": [
+    {
+      "name": "Data Analysis with Python",
+      "link": "https://www.example.com/data-analysis-python",
+      "skill": "Data Analysis"
+    }
+  ],
+  "Leadership": [
+    {
+      "name": "Leadership Skills Development",
+      "link": "https://www.example.com/leadership-development",
+      "skill": "Leadership"
+    }
+  ],
+  "Communication": [
+    {
+      "name": "Effective Communication Techniques",
+      "link": "https://www.example.com/effective-communication",
+      "skill": "Communication"
+    }
+  ],
+  "Time Management": [
+    {
+      "name": "Mastering Time Management",
+      "link": "https://www.example.com/time-management",
+      "skill": "Time Management"
+    }
+  ],
+  "Creativity": [
+    {
+      "name": "Enhancing Creativity",
+      "link": "https://www.example.com/enhancing-creativity",
+      "skill": "Creativity"
+    }
+  ],
+  "Adobe Photoshop": [
+    {
+      "name": "Adobe Photoshop Essentials",
+      "link": "https://www.example.com/photoshop-essentials",
+      "skill": "Adobe Photoshop"
+    }
+  ],
+  "Illustration": [
+    {
+      "name": "Introduction to Illustration",
+      "link": "https://www.example.com/intro-to-illustration",
+      "skill": "Illustration"
+    }
+  ],
+  "SEO": [
+    {
+      "name": "SEO Fundamentals",
+      "link": "https://www.example.com/seo-fundamentals",
+      "skill": "SEO"
+    }
+  ],
+  "Content Creation": [
+    {
+      "name": "Content Creation Strategies",
+      "link": "https://www.example.com/content-creation-strategies",
+      "skill": "Content Creation"
+    }
+  ],
+  "Social Media": [
+    {
+      "name": "Social Media Marketing",
+      "link": "https://www.example.com/social-media-marketing",
+      "skill": "Social Media"
+    }
+  ]
 }
