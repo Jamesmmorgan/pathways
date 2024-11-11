@@ -1,0 +1,22 @@
+{
+  "Programming": [
+    {
+      "name": "Learn Programming in Python",
+      "link": "https://www.udemy.com/course/learn-programming-in-python/",
+      "skill": "Programming"
+    },
+    {
+      "name": "C++ Programming Fundamentals",
+      "link": "https://www.udemy.com/course/c-plus-plus-programming-fundamentals/",
+      "skill": "Programming"
+    }
+  ],
+  "Algorithms": [
+    {
+      "name": "Algorithms and Data Structures",
+      "link": "https://www.udemy.com/course/algorithms-and-data-structures/",
+      "skill": "Algorithms"
+    }
+  ],
+  // Additional skills and courses...
+}
