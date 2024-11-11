@@ -2,7 +2,7 @@ import requests
 import json
 
 # Replace with your actual API key
-api_key = 'YOUR_ACTUAL_API_KEY'
+api_key = 'Ro6tKGXY5Fx6McGqW9KKOpXUbvgJugvY'
 
 # Load skills from skills.json
 with open('data/skills.json', 'r') as f:
