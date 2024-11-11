@@ -1,0 +1,22 @@
+[
+  {
+    "job_title": "Software Engineer",
+    "common_skills": ["Programming", "Algorithms", "Data Structures"]
+  },
+  {
+    "job_title": "Data Scientist",
+    "common_skills": ["Statistics", "Machine Learning", "Data Analysis"]
+  },
+  {
+    "job_title": "Project Manager",
+    "common_skills": ["Leadership", "Communication", "Time Management"]
+  },
+  {
+    "job_title": "Graphic Designer",
+    "common_skills": ["Creativity", "Adobe Photoshop", "Illustration"]
+  },
+  {
+    "job_title": "Marketing Specialist",
+    "common_skills": ["SEO", "Content Creation", "Social Media"]
+  }
+]
